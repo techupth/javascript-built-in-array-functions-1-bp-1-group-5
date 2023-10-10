@@ -1,3 +1,4 @@
+// 
 const todos = [
   { topic: "Doing pre-work", completed: true },
   { topic: "Workout", completed: false },
@@ -6,19 +7,8 @@ const todos = [
   { topic: "Clean the room", completed: true },
 ];
 
-function getTodoTopics(todos) {
-  // Start coding here
+function getTodoTopics (todos) {
+	return todos["topic"] // Return ตัว Array ของ String ที่เป็นชื่อ Topic ของ Todo
 }
-
-getTodoTopics(todos);
-
-/* 
-	Output:
-	[
-		'Doing pre-work',
-		'Workout',
-		'Playing computer games',
-		'Relax',
-		'Clean the room'
-	]
-*/
+const result = todos.map(getTodoTopics)
+console.log(result)
