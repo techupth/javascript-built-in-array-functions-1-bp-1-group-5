@@ -1,13 +1,15 @@
 const todos = [
-  { topic: "Doing pre-work", completed: true },
-  { topic: "Workout", completed: false },
-  { topic: "Playing computer games", completed: true },
-  { topic: "Relax", completed: false },
-  { topic: "Clean the room", completed: true },
+	{ topic: "Doing pre-work", completed: true },
+	{ topic: "Workout", completed: false },
+	{ topic: "Playing computer games", completed: true },
+	{ topic: "Relax", completed: false },
+	{ topic: "Clean the room", completed: true },
 ];
 
 function getTodoTopics(todos) {
-  // Start coding here
+	// Start coding here
+	const topics = todos.map(array => array.topic)
+	return topics
 }
 
 getTodoTopics(todos);
